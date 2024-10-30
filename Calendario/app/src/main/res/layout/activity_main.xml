@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/fotordia"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="24dp"
+        android:text="Yomma Producciones"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/white" />
+
+    <EditText
+        android:id="@+id/etFecha"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="24dp"
+        android:clickable="false"
+        android:focusable="false"
+        android:inputType="none"
+        android:textStyle="bold"
+        android:textColor="@android:color/white"
+        android:textColorHint="@android:color/darker_gray"
+        android:visibility="gone" />
+
+    <!-- Nuevo EditText para el nombre del evento -->
+    <EditText
+        android:id="@+id/etNombreEvento"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="24dp"
+        android:hint="Nombre del evento"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btnSeleccionarFecha"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="Seleccionar Fecha"
+        android:textColor="@android:color/white"
+        android:textColorLink="#03A9F4"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btnGuardarFecha"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="16dp"
+        android:text="Guardar Fecha"
+        android:textColor="@android:color/white"
+        android:textColorLink="#03A9F4"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btnConsultaStock"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="16dp"
+        android:text="Consulta Stock"
+        android:textColor="@android:color/white"
+        android:textColorLink="@android:color/holo_blue_bright"
+        android:textStyle="bold" />
+
+    <!-- TextView para mostrar el mes y el año -->
+    <TextView
+        android:id="@+id/tvMes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:textColor="@android:color/white"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Botones para navegar entre meses -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/btnMesAnterior"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mes Anterior"
+            android:textColor="@android:color/white"/>
+
+        <Button
+            android:id="@+id/btnMesSiguiente"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mes Siguiente"
+            android:layout_marginStart="16dp"
+            android:textColor="@android:color/white"/>
+    </LinearLayout>
+
+    <GridLayout
+        android:id="@+id/cuadriculaCalendario"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnCount="7"
+        android:rowCount="6"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/calendar_background"
+        android:padding="8dp" />
+
+</LinearLayout>

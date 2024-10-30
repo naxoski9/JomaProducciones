@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/fondo1"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/tvInfoStock"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Información de Stock"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF" />
+
+    <!-- Checkboxes para los objetos de eventos -->
+    <CheckBox
+        android:id="@+id/checkbox_cabina_fotografica"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cabina Fotográfica"
+        android:textColor="#FFFFFF" />
+
+    <CheckBox
+        android:id="@+id/checkbox_luces"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Luces LED"
+        android:textColor="#FFFFFF" />
+
+    <CheckBox
+        android:id="@+id/checkbox_proyector"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Proyector (En mantenimiento)"
+        android:enabled="false"
+        android:textColor="#FF0000" />
+
+    <CheckBox
+        android:id="@+id/checkbox_audio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sistema de Audio (En mantenimiento)"
+        android:enabled="false"
+        android:textColor="#FF0000" />
+
+    <!-- Botón para volver a MainActivity -->
+    <Button
+        android:id="@+id/btnVolverAtras"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Volver atrás"
+        android:layout_marginTop="20dp"
+        android:textColor="#FFFFFF" />
+</LinearLayout>
