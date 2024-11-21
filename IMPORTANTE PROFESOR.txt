@@ -1,0 +1,1 @@
+Profesor no nos dejo subir el archivo normal ya que el tamaño del archivo se pasaba del limite y también le queremos decir que nuestro firebase expiro y ya no tenemos como la suscripción activa por si le aparece algún error.
